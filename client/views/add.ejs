@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Go Fish!</title>
+</head>
+<body>
+    <h1>Add Fish</h1>
+
+    <form action="/process" method="post">
+        Fish Name: <input type="text" name="name"><br><br>
+        Color: <input type="text" name="color"><br><br>
+        Size: <select name="size">
+            <option disabled selected value> --Select an Option-- </option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select><br><br>
+        <input type="submit" value="Add Fish to school">
+</body>
+</html>

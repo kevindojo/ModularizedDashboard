@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fish DashBoard</title>
+</head>
+<body>
+    <h1>A school of Fish!</h1>
+    <a href ='/fishs/new'>Add New Fish</a>
+    <br>
+    <hr>
+
+    <% for ( var x of pass ) {%>
+        <p>Name: <%= x.name %></p>
+        <p>Color: <%= x.color %></p>
+        <p>Size: <%= x.size %></p>
+
+        <a href="/fishs/edit/<%= x.id %>">Edit Fish</a> || <a href="/fishs/destory/<%= x.id %>">Hook Fish</a>
+        <hr>
+        <hr>
+    <% } %>
+    
+</body>
+</html>
